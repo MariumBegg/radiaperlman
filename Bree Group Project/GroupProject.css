@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.sides,
+.info {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    align-content: flex-start;
+    height: 50vw;
+    min-height: 400px;
+    max-height: 550px;
+    min-width: 300px;
+    color: #eee;
+}
+
+.header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.12) 40%, rgba(27, 32, 48, 1) 100%);
+}
+
+.header:before {
+    content: "";
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    /*scale(1.0, 1.0);*/
+    transform: translateZ(0);
+    background: #1B2030 url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ) 50% 0 no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    animation: grow 360s linear 10ms infinite;
+    transition: all 0.4s ease-in-out;
+    z-index: -2
+}
+
+.header a {
+    color: #eee;
+    border-style: solid;
+    border-width: 3px;
+}
+
+html {
+    font: 1em/1.5 "Lato", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizelegibility;
+}
+
+body {
+    font-size: 1.3em;
+}
+
+header {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(https://images.unsplash.com/photo-1528164344705-47542687000d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1369&q=80) center no-repeat;
+    /* Image Credit: Unsplash.me */
+    background-size: cover;
+}
+
+header .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+header h1,
+header h2 {
+    margin: 0;
+}
+
+header h2 {
+    text-transform: uppercase;
+    margin-top: -.5em;
+}
+
+header hgroup {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    border: 5px solid #fff;
+    padding: 50px 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 2;
+}
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #333 center no-repeat;
+    background-size: cover;
+    z-index: 0;
+    opacity: 0;
+    -webkit-filter: blur(4px);
+}
+
+.photos img {
+    margin-right: 20px;
+    height: 300px;
+    float: left;
+}
+
+.site {
+    padding: 50px 10px;
+    text-align: center;
+    background-color: #efefef;
+    font-size: .8em;
+    color: #444;
+    position: relative;
+}
+
+.site a {
+    color: #666;
+    text-decoration: none;
+}
+
+.site a:hover {
+    color: #222;
+}
+
+.site nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #222;
+    width: 100%
+}
+
+.site nav a {
+    padding: 10px 10px;
+    font-size: 1.3em;
+    display: inline-block
+}
+
+.site nav a:hover {
+    background: #333;
+    color: #fff
+}
+
+.intro {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-size: x-large;
+    padding: 50px 10px;
+}
+
+.headers {
+    font-size: xx-large;
+    padding: 50px 10px;
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #222;
+    width: 100%
+}
+
+.nav1 a {
+    padding: 10px 30px;
+    font-size: 1.3em;
+    display: inline-block
+}
+
+.nav1 a:hover {
+    background: #333;
+    color: #fff
+}
+
+.paragraphs {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+}
+
+.intros {
+    width: 100%;
+    padding: 10px;
+    font-size: xx-large;
+    background-image: url(https://images.unsplash.com/photo-1571993142257-eae0b44cf0f1?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ);
+}
